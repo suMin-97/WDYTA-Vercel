@@ -7,8 +7,6 @@ const { version: packageVersion } = packageJson;
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
-  assetPrefix: `${process.env.CDN_BASE_URL}/${packageVersion}`,
   images: {
     remotePatterns: [
       {
